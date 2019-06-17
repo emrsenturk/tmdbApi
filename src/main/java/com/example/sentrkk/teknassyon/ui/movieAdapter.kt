@@ -1,10 +1,12 @@
-package com.example.sentrkk.teknassyon
+package com.example.sentrkk.teknassyon.ui
 
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.sentrkk.teknassyon.R
+import com.example.sentrkk.teknassyon.model.movie
 import kotlinx.android.synthetic.main.layout_movie.view.*
 
 class movieAdapter ( val movies : List<movie>) :RecyclerView.Adapter<movieAdapter.movieViewHolder> (){
@@ -16,8 +18,8 @@ class movieAdapter ( val movies : List<movie>) :RecyclerView.Adapter<movieAdapte
       return movieViewHolder(
 
 
-            LayoutInflater.from(parent.context)
-                .inflate(R.layout.layout_movie, parent,false)
+          LayoutInflater.from(parent.context)
+              .inflate(R.layout.layout_movie, parent, false)
       )
     }
 
@@ -36,7 +38,11 @@ class movieAdapter ( val movies : List<movie>) :RecyclerView.Adapter<movieAdapte
         holder.view.textViewVotesCount.text = movie.voteCount.toString() + "votes"
 
         //to do ; how do I use liveData in this code snippet part
-        holder.view.textViewIsNew.visibility = if (movie.isNew) View.VISIBLE else View.INVISIBLE
+        holder.view.textViewIsNew.visibility = if (movie.isNew == 1) View.VISIBLE else View.INVISIBLE
+
+        Glide.with(holder.view.context)
+            .load(movie.image)
+            .into(holder.view.imageView)
     }
 
 
