@@ -37,7 +37,7 @@ class movieAdapter ( val movies : List<movie>) :RecyclerView.Adapter<movieAdapte
         holder.view.textViewLikePercent.text = movie.likePercent.toString() + "%"
         holder.view.textViewVotesCount.text = movie.voteCount.toString() + "votes"
 
-        //to do ; how do I use liveData in this code snippet part
+        //to do ; how do I use liveData in this snippet code part
         holder.view.textViewIsNew.visibility = if (movie.isNew == 1) View.VISIBLE else View.INVISIBLE
 
         Glide.with(holder.view.context)
