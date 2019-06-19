@@ -34,4 +34,21 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.1.0-alpha06'
 
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.google.code.gson:gson:2.6.2'
+
+
+    //OkHttp  -Doing HTTP efficiently makes your stuff load faster and saves bandwidth.-
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation 'com.squareup.okio:okio:1.7.0'
+    implementation'com.squareup.okhttp3:logging-interceptor:3.2.0'
+
+    // Picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
 }
+
+
+
