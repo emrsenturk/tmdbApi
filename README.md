@@ -3,15 +3,15 @@
 Todo
 
 
-- [ ] MVMM Data binding , liveData—— 
-- [ ] Kotlin 
-- [ ] Dependency Injection (dagger2, Koin)— this is an optional part
-- [ ] Bitbucket or github preffered by me 
-- [ ] Retrofit for network 
-- [ ] Constraint Layout 
-- [ ] Glide for img
-- [ ] Recylerview 
-- [ ] Google Paging library (infinitive scroll list) 
+- [ V] MVMM Data binding , liveData—— 
+- [ V] Kotlin 
+- [ V] Dependency Injection (dagger2, Koin)— this is an optional part
+- [ V] Bitbucket or github preffered by me 
+- [ V] Retrofit for network 
+- [ V] Constraint Layout 
+- [ V] Glide for img
+- [V] Recylerview 
+- [ V] Google Paging library (infinitive scroll list) 
 
 these are nice to have part about challenge.
 
